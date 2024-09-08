@@ -1,0 +1,12 @@
+<main class="container">
+  @if (isLoading) {
+  <h1>Loading...</h1>
+  } @else if (todo) {
+  <h4>Detail Todo</h4>
+  <h3>id: {{ todo.id }}</h3>
+  <h1>Title: {{ todo.title }}</h1>
+  <h4>User: {{ todo.userId }}</h4>
+  } @else {
+  <h1>No Todo Found.</h1>
+  }
+</main>
